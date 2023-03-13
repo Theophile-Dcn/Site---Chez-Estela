@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dist/output.css">
+    <title>Chez Estela</title>
+</head>
+<body>
+    <nav class="navbar">
+        <button class="menu-button menu-hamburger">
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>  
+            <p>menu</p>
+        </button>
+        <a href="tel:+33618817214" class="number">
+          <button class="telephoneSize">
+            <img src="picture/telephone.png" class="" alt="icône téléphone">
+          </button>
+        </a>
+        <div class="nav-links">
+            <ul>
+              <li><a href="#section2">Vidéo de présentation</a></li>
+                <li><a href="#galerie">Galerie</a></li>
+                <li><a href="#variete">Variétés cultivées</a></li>
+                <li><a href="#texte">Méthode de culture</a></li>
+                <li><a href="#equipe">L'équipe</a></li>
+                <li><a href="#contact">Horaire et Contact</a></li>
+                <!-- <li><a href="#avis">Avis</a></li> -->
+            </ul>
+       </div>
+    </nav>
+    <header>
+        <div class="fix-title">
+          <h2>Producteur</h2>
+        </div>
+    </header>
+    <button id="scrollBtn">
+        <img src="picture/flecheBas.svg" alt="" style="width: 100%; height: 50%;transform: rotate(180deg);">
+    </button>
+    <div class="first-div color">
+        <img src="picture/Logo_Flyer.svg" alt="Logo de l'entreprise" class="logo">
+        <h2>Maraicher</h2>
+        <p class="revealTexte">Nous sommes maraîchers de Père en Fille depuis plus de 30 ans. 
+          Notre petite exploitation à taille humaine s'étend sur sept hectares de terres riches 
+          que nous cultivons avec amour et passion.</p>
+    </div>
+    <div class="videoDiv">
+        <video id="section2" controls playsinligne height="50vw" width="50vw" poster="picture/poster.png"
+        src="picture/videoChezEstela.mp4"></video>
+    </div>
+    <div class="second-div">
+        <h2 id="galerie" class="revealTexte">Galerie photo</h2>
+        <div class="slider-visible">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="galerySlideSize swiper-slide" style="background-image: url(picture/Golden-3.jpg);"></div>
+                    <div class="galerySlideSize swiper-slide" style="background-image: url(picture/Pasteque1.jpg);"></div>
+                    <div class="galerySlideSize swiper-slide" style="background-image: url(picture/Melon_Jaune_Vert_HD.jpg);"></div>
+                    <div class="galerySlideSize swiper-slide" style="background-image: url(picture/Tomates_Marmande.jpg);"></div>
+                    <div class="galerySlideSize swiper-slide" style="background-image: url(picture/Concours_Pastèque-2.jpg);"></div>
+                    <div class="galerySlideSize swiper-slide" style="background-image: url(picture/Butternut_Potimarron.jpg);"></div>
+                    <div class="galerySlideSize swiper-slide" style="background-image: url(picture/Courges.jpg);"></div>
+                    <div class="galerySlideSize swiper-slide" style="background-image: url(picture/Exploitation_Ciel.jpg);"></div>
+                    <div class="galerySlideSize swiper-slide" style="background-image: url(picture/radisEstela1\ -\ Copie.jpg);"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <button class="swiper-button-next"></button>
+                <button class="swiper-button-prev"></button>
+            </div> 
+        </div>
+    
+        <div class="altContainer">
+            <h2 class="revealTexte" id="variete">+ de 50 variétés cultivées</h2>
+            <p class="revealTexte">
+                Nous pratiquons une agriculture diversifiée au fil des saisons
+            </p>
+            <p class="revealTexte">Certaines variétés sont produites par des maraîchers, des partenaires locaux plus spécialisés : pêches, cerises, abricots.. </p>
+            <img  src="picture/cagetteLégumes.svg" alt="icone cagette fruits et légumes" class="pictoSize revealTexte">
+        </div>
+    </div>
+
+    <div class="backgroundCulture">
+    <section class="swiper mySwiper3 swiper3">
+
+        <div class="swiper-wrapper swiper3">
+    
+          
+          <div class="card2 swiper-slide">
+            
+            <div class="card__content2">
+              <span class="card__title2">Avril</span>
+              <span class="card__name2">Culture de :</span>
+              <p class="card__text2">
+                Artichauts,
+
+                Asperges,
+                
+                Blettes,
+                
+                Cébettes,
+                
+                Courgettes,
+                
+                Epinards,
+                
+                Fèves, 
+                
+                Fraises,
+                
+                Persils,
+                
+                Salades
+                
+                </p>
+              
+            </div>
+          </div>
+          <div class="card2 swiper-slide">
+            
+            <div class="card__content2">
+              <span class="card__title2">Mai</span>
+              <span class="card__name2">Culture de :</span>
+              <p class="card__text2">
+                Asperges,
+                
+                Blettes,
+                
+                Cébettes,
+                
+                Concombres,
+                
+                Courgettes, 
+                
+                Epinards,
+                
+                Fèves, 
+                
+                Fraises,
+                
+                Persils,
+                
+                Poivrons,
+                
+                Salades </p>
+              </p>
+              
+            </div>
+          </div>
+          <div class="card2 swiper-slide">
+            
+            <div class="card__content2">
+              <span class="card__title2">Juin</span>
+              <span class="card__name2">Culture de :</span>
+              <p class="card__text2">
+                Asperges,
+
+                Aubergines,
+                
+                Basilics,
+                
+                Concombres,
+                
+                Courgettes,
+                
+                Fraises,
+                
+                Melons, 
+                
+                Oignons,
+                
+                Pastèques,
+                
+                Persils,
+                
+                Poivrons,
+                
+                Pommes de terre,
+                
+                Salades, Tomates
+              </p>
+              
+            </div>
+          </div>
+          <div class="card2 swiper-slide">
+            
+            <div class="card__content2">
+              <span class="card__title2">Juillet</span>
+              <span class="card__name2">Culture de :</span>
+              <p class="card__text2">
+                Aubergines
+
+                Basilics,
+                
+                Ciboulettes,
+                
+                Concombres,
+                
+                Courgettes,
+                
+                Fraises, 
+                
+                Melons,
+                
+                Oignons,
+                
+                Pastèques, 
+                
+                Persils,
+                
+                Poivrons,
+                
+                Pommes de terre,
+                
+                Salades, 
+                
+                Zucca serpente, Tomates
+              </p>
+              
+            </div>
+          </div>
+          <div class="card2 swiper-slide">
+            
+            <div class="card__content2">
+              <span class="card__title2">Aout</span>
+              <span class="card__name2">Culture de :</span>
+              <p class="card__text2">
+              Aubergines,
+
+              Basilics,
+
+              Concombres, 
+
+              Courgettes,
+
+              Figues, 
+
+              Melons,
+
+              Oignons,
+
+              Pastèques,
+
+              Persils,
+
+              Poivrons,
+
+              Pommes de terre,
+
+              Salades,
+
+              Zucca serpente, Tomates
+
+              </p>
+            </div>
+          </div>
+          <div class="card2 swiper-slide">
+            
+            <div class="card__content2">
+              <span class="card__title2">Septembre</span>
+              <span class="card__name2">Culture de :</span>
+              <p class="card__text2">
+                Aubergines,
+
+                Basilics, 
+                
+                Betteraves,
+                
+                Blettes,
+                
+                Carottes fanes,
+                
+                Cébettes,
+                
+                Concombres,
+                
+                Courges,
+                
+                Courgettes,
+                
+                Figues,
+                
+                Oignons,
+                
+                Patates douces,
+                
+                Persils,
+                
+                Poivrons,
+                
+                Pommes de terre,
+                
+                Radis, 
+                
+                Salades, Tomates                             
+              </p>
+              
+            </div>
+          </div>
+          <div class="card2 swiper-slide">
+            
+            <div class="card__content2">
+              <span class="card__title2">Octobre</span>
+              <span class="card__name2">Culture de :</span>
+              <p class="card__text2">
+                Aubergines,
+
+                Betteraves,
+                
+                Blette,
+                
+                Carottes fanes, 
+                
+                Cébettes, 
+                
+                Céleris,
+                
+                Choux,
+                
+                Courgettes,
+                
+                Epinards,
+                
+                Mâches,
+                
+                Navets,
+                
+                Oignons,
+                
+                Patates Douces,
+                
+                Persils,
+                
+                Poireaux, 
+                
+                Poivrons,
+                
+                Radis,
+                
+                Pommes de terre,
+                
+                Salades 
+              </p>
+              
+            </div>
+          </div>
+          <div class="card2 swiper-slide">
+            
+            <div class="card__content2">
+              <span class="card__title2">Novembre</span>
+              <span class="card__name2">Culture de :</span>
+              <p class="card__text2">
+                Betteraves,
+
+                Blettes,
+                
+                Carottes fanes, 
+                
+                Cébettes,
+                
+                Céleris,
+                
+                Choux,
+                
+                Epinards,
+                
+                Mâches,
+                
+                Navets, 
+                
+                Oignons, 
+                
+                Patates Douces,
+                
+                Persils,
+                
+                Poireaux,
+                
+                Pommes de terre,
+                
+                Radis,
+                
+                
+                Salades
+              </p>
+              
+            </div>
+          </div>
+          
+    
+        </div>
+        <button class="swiper-button-next"></button>
+        <button class="swiper-button-prev"></button>
+    </section>
+</div>
+    
+    <div class="relative background-img">
+        <div class="containerBadge">
+          <img src="picture/badgeAgricultureRaisonnee.svg" alt="badge agriculture raisonnée" class="badgeAgricultureRaisonnee reveal">
+        </div>
+        <img id="texte"src="picture/icon-grow.svg" alt="" class="icon-grow pictoSize revealTexte">
+    </div>
+    <section>
+        <div class="secondSection">
+            <p class="revealTexte">
+              Nous pratiquons une agriculture raisonnée  À l'opposé d'une exploitation intensive en monoculture,
+               notre méthode de maraîchage diversifiée permet d'apporter biodiversité et équilibre pour nos terres.
+                Ainsi, nous ne sommes pas dépendants des produits phytosanitaires et pesticides, destructeurs de toute vie.
+                  De plus, nous posons  des bâches sur nos sols pour éviter la prolifération des mauvaises herbes, et donc leur extermination par l'utilisation d'herbicides.
+            </p>
+        </div>
+    </section>
+    <section>
+        <div class="title-div">
+            <h2 id="equipe" class="text-center titre-bg revealTexte">l'equipe</h2>
+        </div>
+        
+        
+    </section> 
+    <div class="backgroundEquipe">
+    <section class="swiper mySwiper2">
+
+        <div class="swiper-wrapper swiper1">
+    
+          <div class="card swiper-slide">
+            <div class="card__image">
+              <img src="picture/Estela.jpg" alt="photo de l'équipe">
+            </div>
+    
+            <div class="card__content">
+              <span class="card__title">La fille</span>
+              <span class="card__name">Estela</span>
+              <p class="card__text">Créatrice du point de vente directe, elle jongle entre accueil des clients et ramassage des fruits et légumes.
+                Elle a réussi à fédérer une communauté d'habitués qu'elle a plaisir à chouchouter sur son stand. Beaucoup l'appellent même par son prénom !
+                <br>
+                Point fort : souriante et cueilleuse hors pair de fraises!<br>
+                Point faible : tatillonne </p>
+              
+            </div>
+          </div>
+    
+          <div class="card swiper-slide">
+            <div class="card__image">
+              <img src="picture/José.jpg" alt="Photo de l'équipe">
+            </div>
+    
+            <div class="card__content">
+              <span class="card__title">Le père</span>
+              <span class="card__name">José</span>
+              <p class="card__text">Vous ne trouverez pas plus bosseur que lui. Cheville ouvrière de l'exploitation, c'est grâce à son acharnement et son expérience que tout roule sur les terres.  
+                Il s'occupe des plantations, de l'entretien et de la récolte d'une grande partie de notre production.         
+                Il faut se l'avouer, sans José rien de tout cela ne serait possible.<br>                
+                Point fort : toujours souriant<br>                
+                Point faible : trop gentil </p>
+              
+            </div>
+          </div>
+    
+          <div class="card swiper-slide">
+            <div class="card__image">
+              <img src="picture/Susana.jpg" alt="photo de l'équipe">
+            </div>
+    
+            <div class="card__content">
+              <span class="card__title">La mère</span>
+              <span class="card__name">Susana</span>
+              <p class="card__text">C'est l'épouse et le bras droit de José. ( C'est aussi elle qui gère le foyer de main de maîtresse ! ) 
+                Susana est à la fois douée en ramassage mais également en plantations. Et ce qu'elle préfère c'est travailler seule.<br> 
+                Point fort : elle ramasse le persil plus vite que son ombre.<br>                
+                Point faible : farouche</p>
+            
+            </div>
+          </div>
+    
+          <div class="card swiper-slide">
+            <div class="card__image">
+              <img src="picture/Jules.jpg" alt="photo de l'équipe">
+            </div>
+    
+            <div class="card__content">
+              <span class="card__title">Le gendre</span>
+              <span class="card__name">Jules</span>
+              <p class="card__text">Jules, l'amoureux d'Estela, est notre dernière recrue !
+                Artiste dans l'âme, il gère nos réseaux sociaux et nous fait de belles photos mais attention, il aide aussi aux champs !<br>               
+                Point fort: sens du commerce <br>                
+                Point faible: susceptible  
+                 </p>
+              
+            </div>
+          </div>  
+        </div>
+        <button class="swiper-button-next"></button>
+        <button class="swiper-button-prev"></button>
+      </section>
+    </div>
+    <div class="contact">
+        <img id="avis" src="picture/stand.svg" alt="stand icone" class="pictoStand pictoSize revealTexte">
+        <h2 id="contact" class="revealTexte">horaires</h2>
+        <div class="flex colums revealTexte">
+            <p>Lundi au Vendredi<br>9h - 12h30 / 16h - 19h</p>
+            <p>Samedi<br>9h - 12h30 / 16h - 18h</p>
+        </div>
+
+        <h2 class="revealTexte">Contact</h2>
+        <div class="flex colums revealTexte">
+            <a href="tel:+33618817412">06 18 81 72 14</a><br>
+            <a href="mailto:chezestela@gmail.com">chezestela@gmail.com</a>
+        </div>
+        <h2 id="map" class="revealTexte">Suivez-nous</h2>
+        <div class="pictoContainer">
+            <a href="https://www.facebook.com/ChezEstela"><img src="picture/Facebook.png" alt="Logo facebook" class="logoSize revealTexte"></a>
+            <a href="https://www.instagram.com/chezestela/?hl=fr"><img src="picture/Instagram.png" alt="Logo Instagram" class="logoSize revealTexte"></a>
+        </div>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2887.5941562779276!2d3.941235615722594!3d43.635805261572905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b6a58482c9779f%3A0xd53f6de08f92ac64!2sChez%20Estela!5e0!3m2!1sfr!2sfr!4v1675698229437!5m2!1sfr!2sfr" 
+        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="overflow-hidden">
+            <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+            <div class="elfsight-app-338c1389-fd7f-4182-b505-34002d7a4391 p-b"></div>
+        </div>
+    </div>
+    <footer class="footer-container">
+        <div class="menu-container revealTexte">
+            <a href="#galerie">Galerie</a>
+            <a href="#contact">Contact</a>
+            <a href="#avis">Avis</a>
+        </div>
+        <div class="menu-container revealTexte">
+            <a href="#equipe">L'équipe</a>
+            <a href="#variete">variétés cultivées</a>
+        </div>
+        <div class="politique revealTexte">
+            <a href="condition.html">Condition d'utilisation</a>
+            <a href="politique.html">Politique de confidentialité</a>
+        </div>
+        <div class="reseaux revealTexte">
+            <a href="https://www.facebook.com/ChezEstela">Nous suivre sur Facebook</a>
+            <a href="https://www.instagram.com/chezestela/?hl=fr">Nous suivre sur Instagram</a>
+        </div>
+
+    </footer>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="swiper-script.js"></script>
+    <script src="script.js"></script>
+    <script>
+    // SWIPER 1
+
+      var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        effect: 'coverflow',
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+        coverflow: {
+        rotate: 20,
+        stretch: 0,
+        depth: 200,
+        modifier: 1,
+        slideShadows: true,
+          },
+          loop: true,
+      }) ;
+    </script>
+    <script>
+      // SWIPER 2
+      var swiper = new Swiper(".mySwiper2", {
+    pagination: '.swiper-pagination',
+    effect: 'coverflow',
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: 'auto',
+    navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+      },
+    coverflow: {
+    rotate: 00,
+    stretch: 0,
+     depth: 600,
+    modifier: 1,
+    slideShadows: true,
+    },
+    loop: true,
+ }) ;
+    </script>
+    <script> // SWIPER 3
+      var swiper = new Swiper(".mySwiper3", {
+        pagination: '.swiper-pagination',
+        effect: 'coverflow',
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+          },
+        coverflow: {
+        rotate: 00,
+        stretch: 0,
+         depth: 600,
+        modifier: 1,
+        slideShadows: true,
+        },
+        loop: true,
+        }) ;
+    </script>
+</body>
+</html>
