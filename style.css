@@ -1,0 +1,1894 @@
+@import url('https://fonts.googleapis.com/css2?family=Niconne&display=swap');
+@font-face 
+{                                          
+    font-family: 'FarmToMarketFancy';
+    src: url(fonts/FarmToMarketFancy.otf);
+}
+
+
+* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+h2,h1
+{
+    font-family: 'FarmToMarketFancy', 'sans-serif';
+    font-weight: lighter;
+    font-size: 8rem;
+    color: var(--title-color);
+}
+
+h3 
+{
+    font-family: 'FarmToMarketFancy', 'sans-serif';
+    font-weight: lighter;
+    font-size: 4rem;
+    color: var(--title-color);
+}
+
+p
+{
+    font-family: 'Niconne', cursive;
+    font-size: 3em;
+    color: var(--second1-color);
+}
+
+a{
+    font-family: 'Niconne', cursive;
+    font-size: 45px;
+    color: var(--second1-color);
+}
+
+button, a  
+{
+    cursor: pointer;
+}
+
+#scrollBtn {
+    position: fixed;
+    display: none;
+    bottom: 25px;
+    right: 25px;
+    background-color: rgba(208, 191, 92, 0.478);
+    border: 2px solid;
+    border-color: var(--second1-color);
+    border-radius: 100%;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    opacity: 0.5;
+    z-index: 9999;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 7.5em;
+  }
+
+.pictoSize {
+    width: 200px;
+}
+/* NAV & BURGER */
+
+.navbar
+{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0.3em;
+    align-items: center;
+    padding: 0 0.5em 0 0.5em;
+}
+
+
+  
+#scrollBtn.show {
+    display: block;
+  }
+  
+
+.menu-button 
+{   
+    margin-left: 25px;
+    width: 180px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.425);
+    z-index: 999;
+    color: #3c3714;
+    border-radius: 25px;
+    margin-top: 25px;
+}
+
+.menu-button p 
+{
+    font-family: "SignPainter";  
+    color: var(--main-color);
+    font-size: 3em;
+}
+.menu-button p:hover{
+    color: var(--title-color);
+}
+
+
+.hamburger 
+{
+    margin-left: 25px;
+    display: block;
+    width: 25px;
+    height: 20px;
+    position: relative;
+    cursor: pointer;
+    z-index: 999;
+}
+  
+.hamburger span 
+{
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: var(--main-color);
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    transform: scale(1, 1);
+    transition: 0.25s ease-in-out;
+    z-index: 999;
+}
+
+  
+  .hamburger span:nth-child(1) 
+{
+    top: 0px;
+}
+  
+  .hamburger span:nth-child(2), .hamburger span:nth-child(3) 
+{
+    top: 8px;
+}
+  
+  .hamburger span:nth-child(3) 
+{
+    top: 16px;
+}
+  
+  .hamburger.active span:nth-child(1) 
+{
+    transform: scale(0, 1);
+}
+  
+  .hamburger.active span:nth-child(2) 
+{
+    transform: rotate(45deg) translate(-2px, 4px);
+    margin-left: 0.2em;
+
+}
+  
+  .hamburger.active span:nth-child(3) 
+{
+    transform: rotate(-45deg) translate(2px, -8px);
+    margin-left: 0.2em;
+}
+
+.navbar p 
+{
+    line-height: 0;
+    margin: auto;
+}
+
+.navbar a img
+{
+    padding-top: 2vh;
+    display: none;  
+}
+
+
+.navbar .number 
+{
+    margin-right: 3vw;
+    color: var(--main-color);
+    font-weight: bold;
+}
+
+.navbar a 
+{
+    z-index: 116;
+}
+
+.nav-links 
+{
+    position: absolute;
+    background-color: #3c371448;
+    backdrop-filter: blur(8px);
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -100%;
+    transition: all 0.5s ease;
+    z-index: 115;
+}
+
+.nav-links ul 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+}
+
+.nav-links ul li a
+{
+    color: var(--title-color);
+    letter-spacing: 1px;
+    
+}
+
+.nav-links ul li a:hover
+{
+    color: black; 
+}
+
+.nav-links.mobile-menu 
+{
+margin-left: 0;
+}
+
+.navbar .nav-links li 
+{
+    margin: 0.5em 0px;
+    font-weight: 200;
+    font-family: 'FarmToMarketFancy', 'sans-serif';
+    font-size: 2em;
+}
+
+/* HEADER */
+
+header
+{
+    height: 84vh;
+    width: 100%;
+    background-image: url(picture/Concours_Pastèque-2.jpg);
+    background-size: cover;
+    background-position: 50% 40%;
+    position: relative;   
+}
+
+.fix-title{
+    height: 84vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+header h2 
+{   
+    color: var(--title-color);
+    color:var(--title-color);
+    font-size: 13.7em;
+    line-height: 9rem; 
+}
+
+.logo {
+    position: absolute;
+    left: 80%;
+    top: 0;
+    width: 250px;
+    transform: translate(0%,-50%);
+}
+
+/* SECOND CONTAINER */
+
+.first-div
+{
+    position: relative;
+    background-color: var(--main-color);
+}
+
+.first-div  h2 
+{
+    position: absolute;
+    top: -7.2rem;
+    left: 0;
+    font-size: 15.3rem;
+    color: var(--second-color);  
+}
+
+.first-div  p 
+{
+    float: right;
+    width: 50%;
+    margin-right: 8vh;
+    margin-top: 13%;
+    text-align: center;
+    color:var(--title-color);
+    padding-bottom: 10%;
+}
+/* SECTION VIDEO */
+
+video
+{
+   
+    width: 90%;
+    margin: auto;
+    z-index: 109;
+    position: relative;
+}
+
+.videoDiv 
+{
+   background-color: var(--main-color);
+}
+
+/* 2eme container */
+.second-div
+{
+    background-color: var(--main-color); 
+}
+.second-div h2 
+{
+    text-align: center;
+    padding: 2% 0 0 0;
+    color:var(--title-color);
+}
+
+/* SLIDER */
+
+.slider-visible
+{
+    background: var(--main-color);
+    height: 95vh;
+    overflow:hidden;
+}
+
+.swiper-container 
+{
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 80px;
+}
+
+.galerySlideSize 
+{
+    background-position: center;
+    background-size: cover;
+    width: 900px;
+    height: 550px;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, transparent, #0006);
+}
+
+.swiper-button-next 
+{
+    color: var(--title-color);
+}
+
+.swiper-button-prev {
+    color: var(--title-color);
+}
+
+.swiper-button-next:after, .swiper-button-prev:after { 
+    font-size: 80px;
+}
+
+/* FIN DE SLIDER */
+
+.altContainer
+{
+position: relative;
+padding-bottom: 2%;
+}
+
+.altContainer p 
+{
+    text-align: center;
+    color: var(--title-color);
+    padding-bottom: 0%;
+    margin: 0 2%;
+}
+
+.altContainer img 
+{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+.altContainer h2 {
+    padding-top: 20%;
+    height: 100%;
+}
+
+/* SECTION 1 /SLIDER PRODUIT */
+
+.backgroundCulture
+{
+    background-size: cover;
+    background-image: url(picture/Choux.png); 
+}
+.swiper3{
+    width: 100%;
+    height: 55rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .card2{
+    width:30em;
+    height: 36em;
+    background-color: #3c371471;
+    border-color: #3c3714;
+    border-radius: 2em;
+    box-shadow: 0 0 2em rgba(0, 0, 0, 0.253);
+    padding: 2em 1em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0em 2em 8rem 2em;
+  }
+
+  .card__content2{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .card__title2{
+    font-size: 4.5rem;
+    line-height: normal;
+    position: relative;
+    top: -0.2em;
+    color: var(--second1-color);
+    font-family: 'FarmToMarketFancy', 'sans-serif';
+  }
+  
+  .card__name2{
+    color: var(--second1-color);
+    font-size: 4rem;
+    position: relative;
+    top: -0.2em;
+    font-family: 'Niconne', cursive;
+  }
+  
+  .card__text2{
+    text-align: center;
+    font-size:  2.5rem;
+    margin: 0 0;
+    line-height: 40px;
+    color: var(--title-color); 
+  }
+
+
+.badgeAgricultureRaisonnee
+{
+    position: absolute;
+    top: -13.9em;
+    left: 0%;
+    transform: translate(0);
+    width: 1400px;
+    padding: auto;
+    z-index: 9;
+}
+
+.reveal {
+    opacity: 0;
+    left: 0%;
+    transition-delay: 1s;
+}
+
+.reveal-visible {
+    opacity: 1;
+    left: 50%;
+    transform: translate(-50%);
+    transition: 1s;
+}
+
+.revealTexte {
+    opacity: 0;
+    transform: translateY(-30px);
+}
+
+.revealTexte-visible {
+    opacity: 1;
+    transform: translateY(0);
+    transition: 1s;
+}
+
+.background-img
+{
+    height: 90vh;
+    width: 100%;
+    background-image: url(picture/Golden-3.jpg);
+    background-size: cover;
+    background-position: 0%;
+}
+
+
+.icon-grow
+{
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+}
+
+/* SECTION 2 */
+
+.secondSection
+{
+    border-top: 2px solid;
+    border-color: var(--second1-color);
+    background-color: var(--main-color);
+}
+.secondSection p 
+{
+    padding: 10% 10%;
+    text-align: center;
+    color: var(--second1-color);
+    line-height: normal;   
+}
+
+/* SLIDER L'EQUIPE */
+.titre-bg
+{
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: var(--title-color);
+}
+.title-div 
+{
+    position: relative;
+}
+
+.bg-main
+{
+    background-color:var(--second-color);
+    height: 80vh;
+}
+/*CARD EQUIPE */
+    .swiper{
+    width: 100%;
+  }
+
+    .backgroundEquipe{
+    background-color: var(--second-color);
+}
+  
+  .swiper1{
+    width: 100%;
+    height: 65rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  .card{
+    width: 35em;
+    height: 45em;
+    background-color:   var(--main-color);
+    border-radius: 2em;
+    box-shadow: 0 0 2em rgba(0, 0, 0, .2);
+    padding: 2em 1em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 2em;
+  }
+  
+  .swiper-slide:not(.swiper-slide-active){
+    filter: blur(0px);
+  }
+  
+  .card__image{
+    width: 70%;
+    height: 15em;
+    margin-bottom: 0em;
+  }
+  
+  .card__image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15%;
+    border: 3px solid var(--title-color);
+    object-fit: cover;
+  }
+  
+  .card__content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+  }
+  
+  .card__title{
+    font-size: 4rem;
+    font-weight: 500;
+    position: relative;
+    top: -0em;
+    line-height: normal;
+    color: var(--second1-color);
+    font-family: 'FarmToMarketFancy', 'sans-serif';
+  }
+  
+  .card__name{
+    color: var(--second1-color);
+    font-size: 2.5rem;
+    font-family: 'Niconne', cursive;
+  }
+  
+  .card__text{
+    text-align: center;
+    font-size: 2rem;
+    margin: 0.5em 0;
+    line-height: 30px;
+    color: var(--title-color);
+    
+  }
+  
+
+
+/* CONTACT */
+
+.contact 
+{   
+    border-top: 2px solid;
+    border-color: var(--second1-color);
+    position: relative;
+    text-align: center;
+    background-color: var(--main-color);
+    padding-top: 6%;
+}
+
+.contact .pictoStand
+{
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.contact p 
+{
+    color: var(--second1-color);
+}
+
+.contact h2 
+{
+    padding: 0% 0% 2% 0%;
+    color: var(--title-color);
+}
+
+.flex 
+{
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.contact a 
+{
+    font-family: "SignPainter";
+    color: var(--second1-color);
+}
+
+.contact a:hover{
+    color: var(--second-color);
+}
+
+.pictoContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2% 35%;
+}
+
+.pictoContainer img {
+    animation: animate 1.8s linear infinite;
+}
+
+@keyframes animate 
+{
+   0%, 100%
+   {
+        transform: translateY(-15px);
+   }
+   50% 
+   {
+        transform: translateY(5px);
+   }
+}
+
+.pictoContainer a {
+    display: flex;
+    justify-content: center;
+}
+
+.logoSize{
+    width: 4em;
+    padding: 0 25px 15px 25px;
+}
+
+iframe 
+{
+    height: 80vh;
+}
+
+.overflow-hidden {
+    overflow-x: hidden;
+}
+
+.p-b{
+    padding-bottom: 0%;
+}
+
+/* FOOTER */
+
+
+.title-1 {
+    font-size: 4rem;
+    padding-top: 3%;
+    color: var(--title-color);
+    
+}
+.politique-texte {
+    padding: 0 7%;
+    font-size: 30px;
+    letter-spacing: 0;
+    list-style: inherit ;
+    font-family: 'Niconne', cursive;
+    color: var(--second1-color);
+}
+.body-color{
+    background-color: var(--main-color);
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    height: 100%;
+    background-color: var(--second-color); 
+}
+
+footer a {
+    display: flex;
+    font-size: 28px;
+    flex-direction: column;
+    color: var(--second1-color);
+    font-family: 'comic sans ms', Courier, monospace;
+}
+
+:root {
+    --main-color: #3c3714; 
+}
+:root {
+    --title-color: #ffe0a5; 
+}
+
+:root {
+    --second-color: #76592d; 
+}
+:root {
+    --second1-color: #ffd180; 
+}
+
+
+
+
+
+/* MEDIA QUERY */
+@media screen and (orientation: landscape) and (max-width: 950px) and (max-height:509px) {
+     /* GLOBAL SETTING */
+     h2,h1
+     {
+     font-size: 5rem;
+     }
+     p
+     {
+     font-size: 1.8rem;
+     }
+ 
+     a   
+     {
+     font-size: 15px;
+     }
+ 
+     button, a  
+     {
+     cursor: pointer;
+     }
+     .logo{
+         width: 125px;
+         left: 65%;
+     }
+ 
+     .pictoSize {
+         width: 115px;
+     }
+     .logoSize {
+         padding: 0;
+     }
+     .pictoContainer 
+     {   
+         margin-right: 8%;
+         margin-left: 8%;
+         padding: 15px;
+     }
+     /* HEADER */
+    .navbar .nav-links ul {
+        line-height: normal;
+    }
+    .navbar .nav-links ul li a {
+        font-size: 25px;
+
+    }
+    .navbar .nav-links ul li {
+        margin: 0.35em 0;
+    }
+     header 
+    {
+        height: 68vh;
+    }
+    header h2 {
+        font-size: 8rem;
+        line-height: 3.9rem;
+    }
+    .fix-title {
+        height: 68vh;
+    }
+    .first-div h2 {
+        font-size: 8.9rem;
+        top: -4.2rem;
+    }
+    .logo 
+    {
+        width: 155px;
+    }
+    .fix-title
+    {
+        height: 65vh;
+    }
+    #scrollBtn {
+        margin-bottom: 2.5rem;
+    }
+    .navbar a img
+    {
+    display: block;
+    padding-top: 0;
+    width: 80%;
+    padding: 7px;
+    }
+    .telephoneSize{
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.425);
+    border-color: var(--main-color);
+    }
+    .menu-button p {
+        display: none;
+    }
+    .menu-button {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+    }
+    .hamburger {
+        margin-left: 0;
+    }
+    /* First div */
+    .first-div  p 
+    {
+    float: inherit;
+    width: 100%;
+    padding: 22% 5% 0 5%;
+    margin-right: 0vh;
+    margin-top: 0%;    
+    padding-bottom: 10%;    
+    }  
+    .slider-visible {
+        height: 100vh;
+    }
+    .galerySlideSize {
+        width: 455px;
+        height: 250px;
+        }
+        .altContainer h2 {
+            padding-top: 25%;
+            height: 100%;
+        }
+        .altContainer img 
+        {
+        position: absolute;
+        top: 15%;
+        left: 50%;
+        transform: translate(-50% , -50%);
+        }
+        .altContainer p {
+            padding: 2%;
+        }
+        .swiper3{
+            height: 38rem;
+          }
+           /* badge Agriculture */
+      
+    .badgeAgricultureRaisonnee{
+        width: 100%;
+        position: inherit;
+        transform: translate(0%);
+    }
+    .containerBadge {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        height: 7.5vw;
+    }
+    
+    
+    .card2{
+        width:80%;
+        height: 22rem;
+        background-color: #3c371471;
+        border-color: #3c3714;
+        border-radius: 2em;
+        box-shadow: 0 0 2em rgba(0, 0, 0, 0.253);
+        padding: 2em 1em;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 1em 2em 5rem 2em;
+    }
+    .card__title2{
+        font-size: 4rem;
+        line-height: -1em;
+        position: relative;
+        top: -0.2em;
+        color: var(--second1-color);
+        font-family: 'FarmToMarketFancy', 'sans-serif';
+      }
+      .card{
+        width: 90%;
+        height: 23em;
+        background-color:   var(--main-color);
+        border-radius: 2em;
+        box-shadow: 0 0 2em rgba(0, 0, 0, .2);
+        padding: 0em 0.5em;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        margin: 0 2em;
+      }
+      .card__image{
+        width: 200px;
+        height: 15em;
+        margin-bottom: 0em;
+      }
+      .card__content{
+        width: 85%;
+        padding: 1em;
+      }
+      .card__title {
+        font-size: 3rem;
+      }
+      .card__name {
+        font-size: 2rem;
+      }
+      .card__text{
+        font-size: 1.5rem;
+      }
+      .swiper-button-next:after, .swiper-button-prev:after {
+        font-size: 25px;
+        z-index: 999;
+      }
+      .swiper1{
+        height: 35rem;
+      }
+      footer a {
+        font-size: 15px;
+      }
+
+}
+@media screen and (min-width : 2000px) and (min-height:510px){
+    /* GLOBAL SETTING */
+    h2,h1
+    {
+    font-size: 12rem;
+    }
+
+    h3 
+    {
+    font-size: 4rem;
+    }
+
+    p
+    {
+    font-size: 5rem;
+    }
+
+    a   
+    {
+    font-size: 45px;
+    }
+
+    button, a  
+    {
+    cursor: pointer;
+    }
+    .pictoSize {
+        width: 250px;
+    }
+    #scrollBtn {
+
+        width: 70px;
+        height: 70px;
+        margin-bottom: 7.5em;
+      }
+    /* HEADER & FIRST SECTION */
+    .navbar .nav-links li 
+    {
+    margin: 0.3em 0px;
+    font-size: 4em;
+    }
+    header 
+    {
+        height: 82vh;
+    }
+    .fix-title
+    {
+        height: 82vh;
+    }
+    header h2 
+    {
+        font-size: 16em;
+        line-height: 11rem;
+    }
+    .first-div h2 
+    {
+        font-size: 18rem;
+        top: -8.3rem;
+
+    }
+    .slider-visible {
+        height: 120vh;
+    }
+    /* SLIDER PRODUIT */
+    .swiper3{
+        height: 58rem;
+      }
+    .card2{
+        width:30em;
+        height: 38em;
+        padding: 2em 1em;
+        margin: 0em 2em 8rem 2em;
+      }
+    .card__text2
+    {
+        font-size:  3rem;
+        line-height: 40px;
+      }
+    /* BADGE SIZE */
+    .badgeAgricultureRaisonnee 
+    {
+        width: 1800px;
+        top: -17.8rem;
+    }
+    .background-img
+    {
+        height: 105vh;
+    }
+}
+@media screen and (max-width:1440px) and (min-height:510px){
+    /* GLOBAL SETTING */
+    h2,h1
+    {
+    font-size: 6rem;
+    }
+
+    h3 
+    {
+    font-size: 4rem;
+    }
+
+    p
+    {
+    font-size: 2rem;
+    }
+
+    a   
+    {
+    font-size: 45px;
+    }
+
+    button, a  
+    {
+    cursor: pointer;
+    }
+    .logo{
+        width: 225px;
+    }
+    .pictoSize {
+        width: 200px;
+    }
+    /* HEADER */
+    .nav-links ul li {
+        font-size: 25px;
+    }
+    header h2 {
+        font-size: 10.5rem;
+        line-height: 7.2rem;
+    }
+    .first-div h2 {
+        font-size: 11.6rem;
+        top: -5.3rem;
+    }
+    .logo {
+        left: 70%;
+    }
+    .first-div  p 
+    {
+    float: inherit;
+    width: 100%;
+    padding: 15% 5% 0 5%;
+    margin-right: 0vh;
+    margin-top: 0%;
+    padding-bottom: 10%;
+    }
+    .altContainer img 
+    {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    }
+    .altContainer h2 {
+        padding-top: 25%;
+        height: 100%;
+    }
+    
+    /* SLIDER PRODUIT */
+    .swiper3{
+        height: 58rem;
+      }
+    .card2{
+        width:25em;
+        height: 30em;
+        padding: 2em 1em;
+        margin: 0em 2em 8rem 2em;
+      }
+    .card__text2
+    {
+        font-size:  2rem;
+        line-height: 40px;
+      }
+      .card__title2{
+        font-size: 4rem;
+        line-height: 90px; 
+        top: -0.2em;
+      }
+      
+      .card__name2{
+        font-size: 3rem;
+        top: -0.2em;
+      }
+    /* badge Agriculture */
+      
+    .badgeAgricultureRaisonnee{
+        width: 100%;
+        position: inherit;
+        transform: translate(0%);
+    }
+    .containerBadge {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        height: 7.5vw;
+    }
+    /* FOOTER */
+
+    .footer-container a {
+        font-size: 15px;
+    }
+}
+@media screen and (max-width:1000px) and (min-height:510px) {
+    /* GLOBAL SETTING */
+    h2,h1
+    {
+    font-size: 5.5rem;
+    }
+    p
+    {
+    font-size: 2rem;
+    }
+
+    a   
+    {
+    font-size: 45px;
+    }
+
+    button, a  
+    {
+    cursor: pointer;
+    }
+    .logo{
+        width: 200px;
+    }
+    .pictoSize {
+        width: 155px;
+    }
+    /* HEADER */
+    .nav-links ul li {
+        font-size: 20px;
+    }
+    header h2 {
+        font-size: 8rem;
+        line-height: 5.5rem;
+    }
+    .first-div h2 {
+        font-size: 8.9rem;
+        top: -4rem;
+    }
+    .logo {
+        left: 70%;
+    }
+
+    /* First div */
+    .first-div  p 
+    {
+    float: inherit;
+    width: 100%;
+    padding: 15% 5% 0 5%;
+    margin-right: 0vh;
+    margin-top: 0%;
+    padding-bottom: 10%;
+    }
+    /* SLIDER PHOTO */
+    .slider-visible {
+        height: 38rem;
+    }
+    .galerySlideSize {
+    width: 600px;
+    height: 400px;
+    }
+    /* Variete CONTAINER */
+    .altContainer {
+        padding-bottom: 4%;
+    }
+    .altContainer img 
+    {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    }
+    .altContainer h2 {
+        padding-top: 28%;
+        height: 100%;
+    }
+    
+    /* SLIDER PRODUIT */
+    .swiper3{
+        height: 40rem;
+      }
+    .card2{
+        width:25em;
+        height: 30em;
+        padding: 2em 1em;
+        margin: 0em 2em 8rem 2em;
+      }
+    .card__text2
+    {
+        font-size:  2rem;
+        line-height: 40px;
+      }
+      .card__title2{
+        font-size: 4rem;
+        line-height: 90px; 
+        top: -0.2em;
+      }
+      
+      .card__name2{
+        font-size: 3rem;
+        top: -0.2em;
+      }
+    /* badge Agriculture */
+      
+    .badgeAgricultureRaisonnee{
+        width: 100%;
+        position: inherit;
+        transform: translate(0%);
+    }
+    .containerBadge {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        height: 7.5vw;
+    }
+    /* GOLDEN BACKGROUD SIZE */
+    .background-img {
+        height: 30rem;
+    }
+    /* P AFTER BACKGROUND GOLDEN */
+    .secondSection p {
+        padding: 15% 10%;
+    }
+    /* FOOTER */
+
+    .footer-container a {
+        font-size: 15px;
+    }
+}
+@media screen and (max-width:768px) and (min-height:510px){
+    /* GLOBAL SETTING */
+    h2,h1
+    {
+    font-size: 5rem;
+    }
+    p
+    {
+    font-size: 1.8rem;
+    }
+
+    a   
+    {
+    font-size: 30px;
+    }
+
+    button, a  
+    {
+    cursor: pointer;
+    }
+    .logo{
+        width: 125px;
+    }
+
+    .pictoSize {
+        width: 105px;
+    }
+    .logoSize {
+        padding: 0;
+    }
+    .pictoContainer 
+    {   
+        margin-right: 8%;
+        margin-left: 8%;
+        padding: 15px;
+    }
+    /* HEADER */
+    .nav-links ul li {
+        font-size: 18px;
+    }
+    .navbar a img
+    {
+    display: block;
+    padding-top: 0;
+    width: 80%;
+    padding: 7px;
+    }
+    .telephoneSize{
+        margin-top: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.425);
+        border-color: var(--main-color);
+    }
+    .fix-title {
+    align-items: flex-end;
+    justify-content: center;
+    }
+    header {
+        background-position: 70%;
+    }
+   
+    .first-div h2 {
+        left: 50%;
+        transform: translate(-50%);
+    }
+    .logo {
+        left: 50%;
+        top: -12em;
+        transform: translate(-50%, 0%);
+    }
+
+    /* First div */
+    .first-div  p 
+    {
+    float: inherit;
+    width: 100%;
+    padding: 22% 5% 0 5%;
+    margin-right: 0vh;
+    margin-top: 0%;
+    padding-bottom: 10%;
+    }
+    /* SLIDER PHOTO */
+    .slider-visible {
+        height: 32rem;
+    }
+    .galerySlideSize {
+    width: 455px;
+    height: 320px;
+    }
+    .swiper-button-next:after, .swiper-button-prev:after { 
+        font-size: 40px;
+    }
+    /* Variete CONTAINER */
+    .altContainer {
+        padding-bottom: 4%;
+    }
+    .altContainer img 
+    {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    }
+    .altContainer h2 {
+        padding-top: 28%;
+        height: 100%;
+    }
+    
+    /* SLIDER PRODUIT */
+    .swiper3{
+        height: 40rem;
+      }
+    .card2{
+        width:25em;
+        height: 30em;
+      }
+    .card__text2
+    {
+        font-size:  2rem;
+        line-height: 40px;
+    }
+    .card__title2{
+        font-size: 4rem;
+    }
+      
+    .card__name2
+    {
+        font-size: 3rem;
+        top: -0.2em;
+    }
+    /* badge Agriculture */
+      
+    .badgeAgricultureRaisonnee{
+        width: 100%;
+        position: inherit;
+        transform: translate(0%);
+    }
+    .containerBadge {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        height: 7.5vw;
+    }
+    /* GOLDEN BACKGROUD SIZE */
+    .background-img {
+        height: 30rem;
+    }
+    /* P AFTER BACKGROUND GOLDEN */
+    .secondSection p {
+        padding: 15% 10%;
+    }
+    /* SLIDER EQUIPE */
+    .swiper1
+    {
+        height: 50rem;
+      } 
+    .card{
+    width: 30em;
+    height: 40em;
+    }
+    .card__title
+    {
+    font-size: 3rem;
+    }
+    .card__text
+    {
+    text-align: center;
+    font-size: 1.9rem;
+    margin: 0 0;
+    line-height: 25px;
+    color: var(--title-color);
+        
+    }
+    /* FOOTER */
+
+    .footer-container a {
+        font-size: 15px;
+    }
+}
+@media screen and (max-width:520px) and (min-height:510px) {
+    /* GLOBAL SETTING */
+    h2,h1
+    {
+    font-size: 3.5rem;
+    }
+    p
+    {
+    font-size: 1.7rem;
+    }
+
+    a   
+    {
+    font-size: 30px;
+    }
+
+    button, a  
+    {
+    cursor: pointer;
+    }
+    .logo{
+        width: 125px;
+    }
+
+    .pictoSize {
+        width: 105px;
+    }
+    .logoSize {
+        padding: 0;
+    }
+    .pictoContainer 
+    {   
+        margin-right: 8%;
+        margin-left: 8%;
+        padding: 15px;
+    }
+    /* HEADER */
+    header {
+        background-position: 10%;
+    }
+    .navbar .nav-links li {
+        margin: 0.5em 0;
+    }
+    .nav-links {
+        padding-bottom: 30%;
+    }
+    .navbar a img
+    {
+    display: block;
+    padding-top: 0;
+    width: 80%;
+    padding: 7px;
+    }
+    .menu-button {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+    }
+    .menu-button p {
+        display: none;
+    }
+    .telephoneSize{
+        margin-top: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.425);
+        border-color: var(--main-color);
+    }
+    .hamburger {
+        margin-left: 0;
+    }
+    
+    header {
+        background-position: 55%;
+    }
+    header h2 {
+        font-size: 5.8rem;
+        line-height: 4rem;
+    }
+   
+    .first-div h2 {
+        font-size: 6.5rem;
+        top: -3rem;
+    }
+    .logo {
+        left: 50%;
+        top: -10.5em;
+        transform: translate(-50%, 0%);
+    }
+
+    /* First div */
+    .first-div  p 
+    {
+    float: inherit;
+    width: 100%;
+    padding: 22% 5% 0 5%;
+    margin-right: 0vh;
+    margin-top: 0%;
+    padding-bottom: 10%;
+    }
+    /* SLIDER PHOTO */
+    .slider-visible {
+        height: 25rem;
+    }
+    .galerySlideSize {
+    width: 350px;
+    height: 230px;
+    }
+    .swiper-button-next:after, .swiper-button-prev:after { 
+        font-size: 40px;
+    }
+    /* Variete CONTAINER */
+    .altContainer {
+        padding: 4%;
+    }
+    .altContainer p {
+        padding: 3%;
+    }
+    .altContainer img 
+    {
+    position: absolute;
+    top: 12%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    }
+    /* SLIDER PRODUIT */
+    .swiper3{
+        height: 45rem;
+      }
+    .card2{
+        width:20em;
+        height: 35em;
+        margin: 0;
+      }
+    .card__text2
+    {
+        font-size:  2rem;
+        line-height: 40px;
+    }
+    .card__title2{
+        font-size: 4rem;
+        text-align: center;
+    }
+      
+    .card__name2
+    {
+        font-size: 3rem;
+        top: -0.2em;
+    }
+    /* badge Agriculture */
+      
+    .badgeAgricultureRaisonnee{
+        width: 100%;
+        position: inherit;
+        transform: translate(0%);
+    }
+    
+    /* GOLDEN BACKGROUD SIZE */
+    .background-img {
+        height: 25rem;
+        background-position: 50%;
+    }
+    /* P AFTER BACKGROUND GOLDEN */
+    .secondSection p {
+        padding: 15% 5%;
+    }
+    /* SLIDER EQUIPE */
+    .swiper1
+    {
+        height: 50rem;
+    } 
+    .card{
+    width: 21em;
+    height: 40em;
+    }
+    .card__title
+    {
+    font-size: 2.5rem;
+    }
+    .card__text
+    {
+    text-align: center;
+    font-size: 1.7rem;
+    margin: 0 0;
+    line-height: 25px;
+    color: var(--title-color);
+        
+    }
+    .swiper-button-next, .swiper-button-prev {
+        z-index: 999;
+        
+    }
+    /* CONTACT */
+    .logoSize{
+        width: 75px;
+    }
+    .flex {
+        flex-direction: column;
+    }
+    .contact h2 
+    {
+    padding: 3% 0% 5% 0%;
+    color: var(--title-color);
+    }
+    /* FOOTER */
+    .footer-container{
+        height: 100%;
+    }
+    .footer-container a {
+        font-size: 10px;
+        
+    }
+}
+@media screen and (max-width:405px) and (min-height:510px) {
+    /* GLOBAL SETTING */
+    h2,h1
+    {
+    font-size: 3.5rem;
+    }
+    p
+    {
+    font-size: 1.7rem;
+    }
+
+    a   
+    {
+    font-size: 30px;
+    }
+
+    button, a  
+    {
+    cursor: pointer;
+    }
+    .logo{
+        width: 125px;
+    }
+
+    .pictoSize {
+        width: 105px;
+    }
+    .logoSize {
+        padding: 0;
+    }
+    .pictoContainer 
+    {   
+        margin-right: 8%;
+        margin-left: 8%;
+        padding: 15px;
+    }
+    /* HEADER */
+    .navbar .nav-links li {
+        margin: 0.2em 0;
+    }
+    .nav-links ul li a {
+        font-size: 25px;
+    }
+    .nav-links{
+        padding-bottom: 40%;
+    }
+    
+    header {
+        background-position: 45%;
+    }
+    header h2 {
+        font-size: 5rem;
+        line-height: 3.5rem;
+    }
+   
+    .first-div h2 {
+        font-size: 5.6rem;
+        top: -2.5rem;
+    }
+    
+
+    /* First div */
+    .first-div  p 
+    {
+    float: inherit;
+    width: 100%;
+    padding: 25% 5% 0 10%;
+    margin-right: 0vh;
+    margin-top: 0%;
+    padding-bottom: 10%;
+    }
+    /* SLIDER PHOTO */
+    .slider-visible {
+        height: 25rem;
+    }
+    .galerySlideSize {
+    width: 310px;
+    height: 230px;
+    }
+    .swiper-button-next:after, .swiper-button-prev:after { 
+        font-size: 40px;
+    }
+    /* Variete CONTAINER */
+    
+   .altContainer h2 {
+    padding: 40% 0 0 0;
+   }
+   .altContainer {
+    padding: 0 0 5% 0;
+   }
+   .altContainer p {
+    padding-top: 2rem;
+   }
+    /* SLIDER PRODUIT */
+    .swiper3{
+        height: 40rem;
+      }
+    .card2{
+        width:16em;
+        height: 34em;
+        margin: 0;
+      }
+    .card__text2
+    {
+        font-size:  1.5rem;
+        line-height: 40px;
+    }
+    .card__title2{
+        font-size: 2rem;
+    }
+      
+    .card__name2
+    {
+        font-size: 2rem;
+        top: -0.2em;
+    }
+    /* GOLDEN BACKGROUD SIZE */
+    .background-img {
+        background-position: 50%;
+    }
+   
+    /* SLIDER EQUIPE */
+    .swiper1
+    {
+        height: 55rem;
+    } 
+    .card{
+    width: 85%;
+    height: 45em;
+    }
+    .card__title
+    {
+    font-size: 2.5rem;
+    }
+    .card__text
+    {
+    text-align: center;
+    font-size: 1.7rem;
+    margin: 0 0;
+    line-height: 25px;
+    color: var(--title-color);
+        
+    } 
+}
+@media screen and (max-height:420px) and (orientation: portrait) {
+    header, .fix-title {
+        height: 90vh;
+    }
+}
+@media screen and (max-height:670px) and (orientation: portrait) {
+    header, .fix-title {
+        height: 90vh;
+    } 
+}
+@media screen and (max-height:920px) and (orientation: portrait) {
+    header, .fix-title {
+        height: 92vh;
+    }
+    #scrollBtn {
+        margin-bottom: 3rem;
+    }
+}
