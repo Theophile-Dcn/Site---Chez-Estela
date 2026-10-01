@@ -41,10 +41,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     
+    <!-- Preload critical images -->
+    <link rel="preload" as="image" href="picture/Concours_Pastèque-2.webp" type="image/webp">
+    <link rel="preload" as="image" href="picture/Logo_Flyer.svg" type="image/svg+xml">
+    
     <!-- Stylesheets -->
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="dist/output.css">
+    <link rel="stylesheet" href="style.min.css">
+    <link rel="stylesheet" href="dist/output.min.css">
     
     <!-- JSON-LD Structured Data -->
     <script type="application/ld+json">
@@ -144,23 +148,23 @@
           que nous cultivons avec amour et passion.</p>
     </div>
     <div class="videoDiv">
-        <video id="section2" controls playsinligne height="50vw" width="50vw" poster="picture/poster.png"
-        src="picture/videoChezEstela.mp4"></video>
+        <video id="section2" controls playsinline height="50vw" width="50vw" poster="picture/poster.webp"
+        src="picture/videoChezEstela.mp4" preload="metadata"></video>
     </div>
     <div class="second-div">
         <h2 id="galerie" class="revealTexte">Galerie photo</h2>
         <div class="slider-visible">
             <div class="swiper-container">
                 <div class="swiper-wrapper">
-                    <div class="galerySlideSize swiper-slide" style="background-image: url(picture/Golden-3.jpg);"></div>
-                    <div class="galerySlideSize swiper-slide" style="background-image: url(picture/Pasteque1.jpg);"></div>
-                    <div class="galerySlideSize swiper-slide" style="background-image: url(picture/Melon_Jaune_Vert_HD.jpg);"></div>
-                    <div class="galerySlideSize swiper-slide" style="background-image: url(picture/Tomates_Marmande.jpg);"></div>
-                    <div class="galerySlideSize swiper-slide" style="background-image: url(picture/Concours_Pastèque-2.jpg);"></div>
-                    <div class="galerySlideSize swiper-slide" style="background-image: url(picture/Butternut_Potimarron.jpg);"></div>
-                    <div class="galerySlideSize swiper-slide" style="background-image: url(picture/Courges.jpg);"></div>
-                    <div class="galerySlideSize swiper-slide" style="background-image: url(picture/Exploitation_Ciel.jpg);"></div>
-                    <div class="galerySlideSize swiper-slide" style="background-image: url(picture/radisEstela1\ -\ Copie.jpg);"></div>
+                    <div class="galerySlideSize swiper-slide" style="background-image: url(picture/Golden-3.webp);"></div>
+                    <div class="galerySlideSize swiper-slide" style="background-image: url(picture/Pasteque1.webp);"></div>
+                    <div class="galerySlideSize swiper-slide" style="background-image: url(picture/Melon_Jaune_Vert_HD.webp);"></div>
+                    <div class="galerySlideSize swiper-slide" style="background-image: url(picture/Tomates_Marmande.webp);"></div>
+                    <div class="galerySlideSize swiper-slide" style="background-image: url(picture/Concours_Pastèque-2.webp);"></div>
+                    <div class="galerySlideSize swiper-slide" style="background-image: url(picture/Butternut_Potimarron.webp);"></div>
+                    <div class="galerySlideSize swiper-slide" style="background-image: url(picture/Courges.webp);"></div>
+                    <div class="galerySlideSize swiper-slide" style="background-image: url(picture/Exploitation_Ciel.webp);"></div>
+                    <div class="galerySlideSize swiper-slide" style="background-image: url(picture/radisEstela1\ -\ Copie.webp);"></div>
                 </div>
                 <div class="swiper-pagination"></div>
                 <button class="swiper-button-next"></button>
@@ -309,7 +313,7 @@
       <div class="swiper-wrapper swiper1">
           <div class="card swiper-slide">
             <div class="card__image">
-              <img src="picture/Estela.jpg" alt="Photo d'Estela" loading="lazy">
+              <img src="picture/Estela.webp" alt="Photo d'Estela" loading="lazy">
             </div>
             <div class="card__content">
               <span class="card__title">La fille</span>
@@ -323,7 +327,7 @@
           </div>
           <div class="card swiper-slide">
             <div class="card__image">
-              <img src="picture/José.jpg" alt="Photo de José" loading="lazy">
+              <img src="picture/José.webp" alt="Photo de José" loading="lazy">
             </div>
             <div class="card__content">
               <span class="card__title">Le père</span>
@@ -337,7 +341,7 @@
           </div>
           <div class="card swiper-slide">
             <div class="card__image">
-              <img src="picture/Susana.jpg" alt="Photo de Susana" loading="lazy">
+              <img src="picture/Susana.webp" alt="Photo de Susana" loading="lazy">
             </div>
             <div class="card__content">
               <span class="card__title">La mère</span>
@@ -350,7 +354,7 @@
           </div>
           <div class="card swiper-slide">
             <div class="card__image">
-              <img src="picture/Jules.jpg" alt="Photo de Jules" loading="lazy">
+              <img src="picture/Jules.webp" alt="Photo de Jules" loading="lazy">
             </div>
             <div class="card__content">
               <span class="card__title">Le gendre</span>
@@ -413,10 +417,9 @@
         </div>
     </footer>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-    <script src="swiper-script.js"></script>
     <script src="script.js"></script>
-    <script>// SWIPER 1
-
+    <script>
+      // SWIPER 1
       var swiper = new Swiper('.swiper-container', {
         pagination: '.swiper-pagination',
         effect: 'coverflow',
@@ -435,49 +438,49 @@
         slideShadows: true,
           },
           loop: true,
-      }) ;
-    </script>
-    <script>// SWIPER 2
-      var swiper = new Swiper(".mySwiper2", {
-    pagination: '.swiper-pagination',
-    effect: 'coverflow',
-    grabCursor: true,
-    centeredSlides: true,
-    slidesPerView: 'auto',
-    navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-      },
-    coverflow: {
-    rotate: 00,
-    stretch: 0,
-     depth: 600,
-    modifier: 1,
-    slideShadows: true,
-    },
-    loop: true,
- }) ;
-    </script>
-    <script> // SWIPER 3
-      var swiper = new Swiper(".mySwiper3", {
+      });
+
+      // SWIPER 2
+      var swiper2 = new Swiper(".mySwiper2", {
         pagination: '.swiper-pagination',
         effect: 'coverflow',
         grabCursor: true,
         centeredSlides: true,
         slidesPerView: 'auto',
         navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-          },
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
         coverflow: {
-        rotate: 00,
-        stretch: 0,
-         depth: 600,
-        modifier: 1,
-        slideShadows: true,
+          rotate: 0,
+          stretch: 0,
+          depth: 600,
+          modifier: 1,
+          slideShadows: true,
         },
         loop: true,
-        }) ;
+      });
+
+      // SWIPER 3
+      var swiper3 = new Swiper(".mySwiper3", {
+        pagination: '.swiper-pagination',
+        effect: 'coverflow',
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        coverflow: {
+          rotate: 0,
+          stretch: 0,
+          depth: 600,
+          modifier: 1,
+          slideShadows: true,
+        },
+        loop: true,
+      });
     </script>
 </body>
 </html>

@@ -262,7 +262,7 @@ header
 {
     height: 84vh;
     width: 100%;
-    background-image: url(picture/Concours_Pastèque-2.jpg);
+    background-image: url(picture/Concours_Pastèque-2.webp);
     background-size: cover;
     background-position: 50% 40%;
     position: relative;   
@@ -417,7 +417,7 @@ padding-bottom: 2%;
 .backgroundCulture
 {
     background-size: cover;
-    background-image: url(picture/Choux.png); 
+    background-image: url(picture/Choux.webp); 
 }
 .swiper3{
     width: 100%;
@@ -511,7 +511,7 @@ padding-bottom: 2%;
 {
     height: 90vh;
     width: 100%;
-    background-image: url(picture/Golden-3.jpg);
+    background-image: url(picture/Golden-3.webp);
     background-size: cover;
     background-position: 0%;
 }
