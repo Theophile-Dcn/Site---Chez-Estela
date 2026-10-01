@@ -1,0 +1,6 @@
+# Robots.txt pour Chez Estela
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://www.chezestela.fr/sitemap.xml

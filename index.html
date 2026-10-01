@@ -1,16 +1,106 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Chez Estela | Producteur Maraicher - Fruits et Légumes Frais près de Montpellier</title>
+    <meta name="description" content="Découvrez notre point de vente situé proche de Le Crès & Saint-Aunès. Notre site vous propose de consulter nos variétés de fruits et légumes frais et locaux, tous cultivés avec soin. Explorez notre gamme de produits de saison et trouvez les meilleurs ingrédients pour vos recettes préférées.">
+    <meta name="keywords" content="maraicher, fruits, légumes, frais, local, Le Crès, Saint-Aunès, Montpellier, agriculture raisonnée, producteur, vente directe, bio, saison">
+    <meta name="author" content="Chez Estela">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.chezestela.fr/">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.chezestela.fr/">
+    <meta property="og:title" content="Chez Estela | Producteur Maraicher - Fruits et Légumes Frais">
+    <meta property="og:description" content="Découvrez notre point de vente situé proche de Le Crès & Saint-Aunès. Fruits et légumes frais et locaux, cultivés avec soin.">
+    <meta property="og:image" content="https://www.chezestela.fr/picture/Logo_Flyer.svg">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:site_name" content="Chez Estela">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://www.chezestela.fr/">
+    <meta name="twitter:title" content="Chez Estela | Producteur Maraicher">
+    <meta name="twitter:description" content="Fruits et légumes frais et locaux près de Montpellier">
+    <meta name="twitter:image" content="https://www.chezestela.fr/picture/Logo_Flyer.svg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="picture/Logo_Flyer.svg">
+    <link rel="apple-touch-icon" href="picture/Logo_Flyer.svg">
+    
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#3c3714">
+    
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://unpkg.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="dist/output.css">
-    <meta name="description" content="Découvrez notre point de vente situé proche de Le Crès & Saint-Aunès. Notre site vous propose de consulter nos variétés de fruits et légumes 
-    frais et locaux, tous cultivés avec soin. Explorez notre gamme de produits de saison et trouvez les meilleurs
-    ingrédients pour vos recettes préférées.">
-    <title>Chez Estela / Producteur Maraicher </title>
+    
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Chez Estela",
+      "description": "Producteur maraicher proposant des fruits et légumes frais et locaux près de Montpellier",
+      "url": "https://www.chezestela.fr",
+      "telephone": "+33618817214",
+      "email": "chezestela@gmail.com",
+      "image": "https://www.chezestela.fr/picture/Logo_Flyer.svg",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Saint-Aunès",
+        "addressRegion": "Occitanie",
+        "addressCountry": "FR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 43.635805,
+        "longitude": 3.941235
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "09:00",
+          "closes": "12:30"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "15:30",
+          "closes": "19:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "09:00",
+          "closes": "12:30"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "15:30",
+          "closes": "18:00"
+        }
+      ],
+      "sameAs": [
+        "https://www.facebook.com/ChezEstela",
+        "https://www.instagram.com/chezestela/"
+      ],
+      "priceRange": "€"
+    }
+    </script>
 </head>
 <body>
     <nav class="navbar">
@@ -44,7 +134,7 @@
         </div>
     </header>
     <button id="scrollBtn">
-        <img src="picture/flecheBas.svg" alt="" style="width: 100%; height: 50%;transform: rotate(180deg);">
+        <img src="picture/flecheBas.svg" alt="Retour en haut" style="width: 100%; height: 50%;transform: rotate(180deg);">
     </button>
     <div class="first-div color">
         <img src="picture/Logo_Flyer.svg" alt="Logo de l'entreprise" class="logo">
@@ -86,7 +176,7 @@
             <p class="revealTexte">
               Certaines variétés sont produites par des maraîchers, des partenaires locaux plus spécialisés : pêches, cerises, abricots... 
             </p>
-            <img  src="picture/cagetteLégumes.svg" alt="icone cagette fruits et légumes" class="pictoSize revealTexte">
+            <img src="picture/cagetteLégumes.svg" alt="icone cagette fruits et légumes" class="pictoSize revealTexte" loading="lazy">
         </div>
     </div>
     <div class="backgroundCulture">
@@ -195,9 +285,9 @@
     </div>    
     <div class="relative background-img">
         <div class="containerBadge">
-          <img src="picture/badgeAgricultureRaisonnee.svg" alt="badge agriculture raisonnée" class="badgeAgricultureRaisonnee reveal">
+          <img src="picture/badgeAgricultureRaisonnee.svg" alt="badge agriculture raisonnée" class="badgeAgricultureRaisonnee reveal" loading="lazy">
         </div>
-        <img id="texte"src="picture/icon-grow.svg" alt="" class="icon-grow pictoSize revealTexte">
+        <img id="texte" src="picture/icon-grow.svg" alt="Icône croissance agriculture" class="icon-grow pictoSize revealTexte">
     </div>
     <section>
         <div class="secondSection">
@@ -219,7 +309,7 @@
       <div class="swiper-wrapper swiper1">
           <div class="card swiper-slide">
             <div class="card__image">
-              <img src="picture/Estela.jpg" alt="photo de l'équipe">
+              <img src="picture/Estela.jpg" alt="Photo d'Estela" loading="lazy">
             </div>
             <div class="card__content">
               <span class="card__title">La fille</span>
@@ -233,7 +323,7 @@
           </div>
           <div class="card swiper-slide">
             <div class="card__image">
-              <img src="picture/José.jpg" alt="Photo de l'équipe">
+              <img src="picture/José.jpg" alt="Photo de José" loading="lazy">
             </div>
             <div class="card__content">
               <span class="card__title">Le père</span>
@@ -247,7 +337,7 @@
           </div>
           <div class="card swiper-slide">
             <div class="card__image">
-              <img src="picture/Susana.jpg" alt="photo de l'équipe">
+              <img src="picture/Susana.jpg" alt="Photo de Susana" loading="lazy">
             </div>
             <div class="card__content">
               <span class="card__title">La mère</span>
@@ -260,7 +350,7 @@
           </div>
           <div class="card swiper-slide">
             <div class="card__image">
-              <img src="picture/Jules.jpg" alt="photo de l'équipe">
+              <img src="picture/Jules.jpg" alt="Photo de Jules" loading="lazy">
             </div>
             <div class="card__content">
               <span class="card__title">Le gendre</span>
@@ -279,7 +369,7 @@
       </section>
     </div>
     <div class="contact">
-        <img id="avis" src="picture/stand.svg" alt="stand icone" class="pictoStand pictoSize revealTexte">
+        <img id="avis" src="picture/stand.svg" alt="Icône stand de vente" class="pictoStand pictoSize revealTexte" loading="lazy">
         <h2 id="contact" class="revealTexte">horaires</h2>
         <div class="flex colums revealTexte">
           <p>Lundi au Vendredi<br>9h - 12h30 / 15h30 - 19h</p>
@@ -292,8 +382,8 @@
         </div>
         <h2 id="map" class="revealTexte">Suivez-nous</h2>
         <div class="pictoContainer">
-            <a href="https://www.facebook.com/ChezEstela"><img src="picture/Facebook.png" alt="Logo facebook" class="logoSize revealTexte"></a>
-            <a href="https://www.instagram.com/chezestela/?hl=fr"><img src="picture/Instagram.png" alt="Logo Instagram" class="logoSize revealTexte"></a>
+            <a href="https://www.facebook.com/ChezEstela" target="_blank" rel="noopener noreferrer" aria-label="Facebook Chez Estela"><img src="picture/Facebook.png" alt="Logo Facebook" class="logoSize revealTexte" loading="lazy"></a>
+            <a href="https://www.instagram.com/chezestela/?hl=fr" target="_blank" rel="noopener noreferrer" aria-label="Instagram Chez Estela"><img src="picture/Instagram.png" alt="Logo Instagram" class="logoSize revealTexte" loading="lazy"></a>
         </div>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2887.5941562779276!2d3.941235615722594!3d43.635805261572905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b6a58482c9779f%3A0xd53f6de08f92ac64!2sChez%20Estela!5e0!3m2!1sfr!2sfr!4v1675698229437!5m2!1sfr!2sfr" 
         width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
